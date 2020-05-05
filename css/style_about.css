@@ -28,7 +28,7 @@ a {
 }
 
 a:visited {
-  color: #788d98;
+  color: #00a6ff;
 }
 
 a:hover {
@@ -37,7 +37,7 @@ a:hover {
 
 header {
   width: 960px;
-  height: 100px;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -60,11 +60,11 @@ header {
 }
 
 .global-nav li a {
-  color: #ffffff;
+  color: #57aeff;
 }
 
 .global-nav li a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #57aeff;
   padding-bottom: 3px;
   text-decoration: none;
 }
@@ -142,15 +142,15 @@ footer small {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 #about {
   background-image: url(../images/about_bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
+  background-attachment: auto;
+  background-size: 100% ;
 }
 
 .main-center {
@@ -187,6 +187,7 @@ h2 {
 #about .profile-image {
   float: right;
   max-width: 20%;
+  margin: 0.5vw 2vw 1.5vw 2vw;
   height: auto;
 }
 
@@ -209,7 +210,7 @@ section {
 
 #about .Educational_backgroud td {
   width: 660px;
-  padding: 12px 0 12px 40px;
+  padding: 12px 20px;
   border: 1px solid #cccccc;
 }
 
@@ -222,4 +223,117 @@ table {
   background-color: transparent;
   margin-top: 0;
   padding: 0;
+}
+
+
+
+/* ---------------- メディアクエリ -------------------- */
+
+@media screen and (max-width:1000px) { 
+  /*　画面サイズが640pxからはここを読み込む　*/
+
+header {
+  width: 90vw;
+  height: 5vw;
+  margin: 0 auto;
+}
+
+.content {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.main-center {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#index footer {
+  width: 120px;
+  margin: 140px auto 0 auto;
+  text-align: center;
+}
+
+.btn a {
+  background-color: #004ad3;
+  color: #ffffff;
+  font-size: 2.5vw;
+  font-weight: normal;
+  font-family: 'Bitter', serif;
+  width: 25vw;
+  display: block;
+  text-align: center;
+  line-height: 5vw;
+  margin-top: 5vw;
+  border-radius: 1vw;
+  border: 0.4vw solid #004ad3;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+#index h1 {
+  font-size: 12vw;
+  line-height: 200px;
+  color: #004ad3;
+  font-family: 'Bitter', serif;
+  margin-bottom: 10px;
+}
+
+#index .content {
+  margin-top: 2vw;
+}
+
+p {
+  font-size: 13px;
+  color: black;
+}
+
+li {
+  font-size: 13px;
+  color: black;
+}
+
+th {
+  font-size: 13px;
+  color: black;
+}
+
+
+td {
+  font-size: 13px;
+  color: black;
+}
+
+#about .profile-image {
+  float: right;
+  max-width: 25%;
+  margin: 3vw 3vw 1vw 3vw;
+  height: auto;
+}
+
+}
+
+@media screen and (max-width:650px) { 
+  /*　画面サイズが640pxからはここを読み込む　*/
+
+header {
+  width: 90vw;
+  height: 3vw;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-top: 20px;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 45px;
+}
+
 }

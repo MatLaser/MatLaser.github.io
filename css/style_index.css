@@ -5,13 +5,18 @@ body {
   padding: 0;
   background-color: #cccccc;
   color: #333333;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 2;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 20px;
   margin-left: 20px;
+}
+
+p {
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 img {
@@ -44,12 +49,12 @@ header {
 
 .logo {
   float: left;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .global-nav {
   float: right;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .global-nav li {
@@ -61,11 +66,11 @@ header {
 }
 
 .global-nav li a {
-  color: #ffffff;
+  color: #57aeff;
 }
 
 .global-nav li a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #57aeff;
   padding-bottom: 3px;
   text-decoration: none;
 }
@@ -92,8 +97,9 @@ footer small {
 #index h1 {
   font-size: 100px;
   line-height: 1;
-  color: #ffffff;
+  color: #004ad3;
   font-family: 'Bitter', serif;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
@@ -103,6 +109,7 @@ footer small {
 
 #index p {
   font-size: 15px;
+  margin-top: 30px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -110,14 +117,14 @@ footer small {
 .btn a {
   background-color: #004ad3;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-family: 'Bitter', serif;
   width: 185px;
   display: block;
   text-align: center;
-  line-height: 50px;
-  margin-top: 20px;
+  line-height: 40px;
+  margin-top: 50px;
   border-radius: 5px;
   border: 2px solid #004ad3;
 }
@@ -140,4 +147,97 @@ footer small {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+
+/* ---------------- メディアクエリ -------------------- */
+
+@media screen and (max-width:1000px) { 
+  /*　画面サイズが640pxからはここを読み込む　*/
+
+header {
+  width: 90vw;
+  height: 10vw;
+  margin: 0 auto;
+}
+
+.content {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#index {
+  background-image: url(../images/index_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#index footer {
+  width: 120px;
+  margin: 140px auto 0 auto;
+  text-align: center;
+}
+
+.btn a {
+  background-color: #004ad3;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Bitter', serif;
+  width: 160px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 2px solid #004ad3;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+#index h1 {
+  font-size: 60px;
+  line-height: 200px;
+  color: #004ad3;
+  font-family: 'Bitter', serif;
+  margin-bottom: 10px;
+}
+
+#index .content {
+  margin-top: 2vw;
+}
+
+#index p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width:650px) { 
+  /*　画面サイズが640pxからはここを読み込む　*/
+
+header {
+  width: 90vw;
+  height: 3vw;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-top: 20px;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 45px;
+}
+
+
 }
